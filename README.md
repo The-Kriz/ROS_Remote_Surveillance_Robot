@@ -1,3 +1,16 @@
+# ROS_Remote_Surveillance_Robot
+
+> 📸 RViz + Gazebo screenshots, real world testing videos -> https://tinyurl.com/Remote-Surveillance-Robot
+
+[![ROS2](https://img.shields.io/badge/ROS2-Humble-blue)](https://docs.ros.org/en/humble/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-green)](LICENSE.md)
+
+
+| Full Robot (RViz) | Gazebo Simulation | Physical Build |
+|---|---|---|
+| ![rviz pic](https://github.com/The-Kriz/rog_ros_bot/assets/90817926/cbf302e6-66fe-47a0-bc24-b182f577a467) | ![gazebo](https://github.com/The-Kriz/rog_ros_bot/assets/90817926/12e0c792-45bc-40ff-9b38-798369b841f1) | ![real 1](https://github.com/The-Kriz/rog_ros_bot/assets/90817926/10a06eaa-d31e-443d-a39c-ca5b8477389d) |
+
+
 ## Build
 ![real 1](https://github.com/The-Kriz/rog_ros_bot/assets/90817926/10a06eaa-d31e-443d-a39c-ca5b8477389d)
 ![real 2](https://github.com/The-Kriz/rog_ros_bot/assets/90817926/e106d1be-d787-4cfa-99ea-35f55aadef9d)
