@@ -5,15 +5,15 @@
 
     <xacro:macro name="wheel" params="name x y wheel_mass wheel_radius wheel_thickness">
 
-        <link name="wheel_${name}_link">
+        <link name="${name}_wheel_link">
 
             <visual name="">
                 <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
                 <geometry>
                     <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
                 </geometry>
-                <material name="black">
-                    <color rgba="0.0 0.0 0.0 1.0"/>
+                <material name="almostblack" >
+                    <color rgba="0.027450980392156862 0.050980392156862744 0.050980392156862744 1.0" />
                 </material>
             </visual>
 
@@ -21,7 +21,6 @@
                     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
                     <geometry>
                         <sphere radius="${wheel_radius}"/>
-                        <!-- <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/> -->
                     </geometry>
             </collision>
 
@@ -30,13 +29,13 @@
             </xacro:inertial_cylinder>
         </link>
 
-        <gazebo reference = "wheel_${name}_link">
+        <gazebo reference = "${name}_wheel_link">
             <material>Gazebo/Black</material> 
         </gazebo>
 
-        <joint name="wheel_${name}_joint" type="continuous">
+        <joint name="${name}_wheel_joint" type="continuous">
             <parent link="chassis"/>
-            <child link="wheel_${name}_link"/>
+            <child link="${name}_wheel_link"/>
             <origin xyz="${x} ${y} -0.015" rpy="-1.57 0.0 0.0"/>
             <axis xyz=".0 .0 1.0"/>
         </joint>
